@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+{% endblock %}
+
+{% block stylesheets %}
+	{{ form_start(form) }}
+	
+	<table id='1st' style='border: 1px solid; margin-left: auto; margin-right: auto; width: 50%;'>
+		<tr><td>{{ form_label(form.referred) }}{{ form_widget(form.referred) }}</td></tr>
+	</table>
+	
+	{{ form_end(form) }}
+{% endblock %}
